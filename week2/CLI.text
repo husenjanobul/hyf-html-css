@@ -1,1 +1,46 @@
+Number 1
+
+ // create a hidden file
+
+$ mkdir .test.txt  
+
+// display hidden file
+
+$ ls -a
+
+-----------------------------------------
+Number 2
+
+// create multiple nested directories with one mkdir command
+
+$ mkdir -p unmesh/these/folders/are/just/for/fun
+( husenjan@husenjan MINGW64 ~/pink/HYF-CLI/unmesh/these/folders/are/just/for/fun
+
+-----------------------------------------
+Number 3
+
+husenjan@husenjan MINGW64 ~
+$ echo "test" > fun
+husenjan@husenjan MINGW64 ~
+$ echo "another test" >> fun
+husenjan@husenjan MINGW64 ~
+$ wc -c fun
+18 fun
+
+-----------------------------------------
+Number 4
+
+//append something in the file *WITHOUT* a newline character
+
+husenjan@husenjan MINGW64 ~/pink/HYF-CLI/fun
+$ touch fun.txt
+husenjan@husenjan MINGW64 ~/pink/HYF-CLI/fun
+$ echo -n "test" >> fun.txt
+husenjan@husenjan MINGW64 ~/pink/HYF-CLI/fun
+$ echo -n "another " >> fun.txt
+husenjan@husenjan MINGW64 ~/pink/HYF-CLI/fun
+$ echo -n "test" >> fun.txt
+husenjan@husenjan MINGW64 ~/pink/HYF-CLI/fun
+$ cat fun.txt
+testanother test
 
