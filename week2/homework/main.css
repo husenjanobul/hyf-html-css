@@ -1,0 +1,123 @@
+body{
+    text-align: center;
+    background-color: rgba(255, 102, 0, 0.89);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{
+    color: orangered;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+.grid-item{
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px);
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    position: relative;
+}
+p{
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    position: absolute;
+    padding-right: 10px;
+    bottom: 0;
+}
+img{
+    width: 50%;
+}
+img:hover{
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+.grid-item:nth-child(1)  img:hover{
+    left: 15%;
+    top: 12%;
+}
+.grid-item:hover{
+    box-shadow: 0 2px 15px rgb(43, 17, 0);
+}
+/* float */
+#grid-floats .grid-item{
+    float: left;
+}
+/* flex box */
+#grid-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-item:nth-child(1){
+    width: calc(50% - 20px);
+}
+section::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* animation */
+h1{
+    font-size: 5em;
+    color: rgb(32, 13, 2);
+    text-shadow: 5px 1px 5px;
+    animation-name: move;
+    animation-duration: 2s;
+}
+@keyframes move{
+   from {
+        opacity: 0;
+        font-size: 1em;
+    }
+    to {
+        opacity: 1;
+        font-size: 5em;
+    }
+}
+h2{
+    font-size: 2em;
+    color: rgba(32, 13, 2, 0.685);
+    border-bottom: 2px solid rgb(78, 31, 4);
+    border-radius: 50%;
+    display: inline-block;
+    padding-bottom: 15px;
+    animation-name: bigger;
+    animation-duration: 1.5s;
+}
+@keyframes bigger{
+    0% {
+        width: 100%
+    }
+    50% {
+        width: 25%;
+    }
+    70% {
+        width: 50%;
+    }
+   100%{
+        width: 240px;
+    }
+}
+/* screen for tablet */
+@media screen and (max-width: 768px) {
+    .grid-item{
+        width: calc(33% - 20px);
+    }
+    .grid-item:nth-child(2){
+        width: calc(50% - 20px);
+    }
+}
+/* screen for phone */
+@media screen and (max-width: 415px) {
+    .grid-item{
+        width: calc(50% - 20px);
+    }
+    .grid-item:nth-child(1){
+        width: calc(100% - 20px);
+    }
+}
