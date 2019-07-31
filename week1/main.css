@@ -19,7 +19,7 @@ section{
 .me{
     width: 200px;
     border: 1px solid black;
-    border-radius: 50%;
+    border-radius: 8px;
 }
 table{
     margin-bottom: 20px;
