@@ -18,7 +18,6 @@ section{
 }
 .me{
     width: 200px;
-    height: 200px;
     border: 1px solid black;
     border-radius: 50%;
 }
@@ -47,10 +46,10 @@ li{
     margin-left:300px; 
  }
 p{
-     padding: 20px;
-     line-height: 2em;
+    padding: 20px;
+    line-height: 2em;
  }
  h4{
-     padding-top: 15px;
+    padding-top: 15px;
     color: rgb(90, 164, 228);
  }
